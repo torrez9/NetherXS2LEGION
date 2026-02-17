@@ -1,38 +1,160 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="xyz.aethersx2.android" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Manifiesto principal de la aplicación NetherSX2 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:compileSdkVersion="23" 
+    android:compileSdkVersionCodename="6.0-2438415" 
+    package="xyz.aethersx2.android" 
+    platformBuildVersionCode="23" 
+    platformBuildVersionName="6.0-2438415">
+    
+    <!-- Permisos requeridos por la aplicación -->
+    <!-- Permiso para vibración del dispositivo (feedback háptico) -->
     <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- Permiso para acceso a Internet (RetroAchievements, actualizaciones) -->
     <uses-permission android:name="android.permission.INTERNET"/>
-    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hasFragileUserData="true" android:icon="@mipmap/ic_launcher" android:label="NetherSX2" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
-        <activity android:exported="false" android:label="@string/save_state_manager_title" android:name="xyz.aethersx2.android.SaveStateManagerActivity" android:theme="@style/AppTheme"/>
-        <activity android:exported="false" android:label="@string/memory_card_create_title" android:name="xyz.aethersx2.android.CreateMemoryCardActivity" android:theme="@style/AppTheme"/>
-        <activity android:exported="false" android:name="xyz.aethersx2.android.FileEditorActivity" android:theme="@style/AppTheme"/>
-        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:exported="false" android:label="@string/title_activity_setup_wizard" android:name="xyz.aethersx2.android.SetupWizardActivity" android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:label="@string/title_activity_settings" android:name="xyz.aethersx2.android.SettingsActivity" android:theme="@style/AppTheme">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="xyz.aethersx2.android.MainActivity"/>
+    
+    <!-- Configuración general de la aplicación -->
+    <application 
+        android:allowBackup="true" 
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory" 
+        android:hasFragileUserData="true" 
+        android:icon="@mipmap/ic_launcher" 
+        android:label="NetherSX2" 
+        android:roundIcon="@mipmap/ic_launcher_round" 
+        android:supportsRtl="true" 
+        android:theme="@style/AppTheme" 
+        android:usesCleartextTraffic="true">
+        
+        <!-- Actividad: Administrador de estados guardados -->
+        <activity 
+            android:exported="false" 
+            android:label="@string/save_state_manager_title" 
+            android:name="xyz.aethersx2.android.SaveStateManagerActivity" 
+            android:theme="@style/AppTheme"/>
+        
+        <!-- Actividad: Crear tarjeta de memoria (Memory Card) -->
+        <activity 
+            android:exported="false" 
+            android:label="@string/memory_card_create_title" 
+            android:name="xyz.aethersx2.android.CreateMemoryCardActivity" 
+            android:theme="@style/AppTheme"/>
+        
+        <!-- Actividad: Editor de archivos -->
+        <activity 
+            android:exported="false" 
+            android:name="xyz.aethersx2.android.FileEditorActivity" 
+            android:theme="@style/AppTheme"/>
+        
+        <!-- Actividad: Asistente de configuración inicial -->
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" 
+            android:exported="false" 
+            android:label="@string/title_activity_setup_wizard" 
+            android:name="xyz.aethersx2.android.SetupWizardActivity" 
+            android:theme="@style/AppTheme.NoActionBar"/>
+        
+        <!-- Actividad: Configuración general de la aplicación -->
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" 
+            android:label="@string/title_activity_settings" 
+            android:name="xyz.aethersx2.android.SettingsActivity" 
+            android:theme="@style/AppTheme">
+            <!-- Define la actividad padre para la navegación -->
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY" 
+                android:value="xyz.aethersx2.android.MainActivity"/>
         </activity>
-        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:label="@string/title_activity_settings" android:name="xyz.aethersx2.android.ControllerSettingsActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="xyz.aethersx2.android.MainActivity"/>
+        
+        <!-- Actividad: Configuración de controles -->
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" 
+            android:label="@string/title_activity_settings" 
+            android:name="xyz.aethersx2.android.ControllerSettingsActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY" 
+                android:value="xyz.aethersx2.android.MainActivity"/>
         </activity>
-        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:label="@string/title_activity_game_properties" android:name="xyz.aethersx2.android.GamePropertiesActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="xyz.aethersx2.android.MainActivity"/>
+        
+        <!-- Actividad: Propiedades específicas por juego -->
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" 
+            android:label="@string/title_activity_game_properties" 
+            android:name="xyz.aethersx2.android.GamePropertiesActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY" 
+                android:value="xyz.aethersx2.android.MainActivity"/>
         </activity>
-        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode" android:exported="true" android:immersive="true" android:label="NetherSX2" android:name="xyz.aethersx2.android.EmulationActivity" android:parentActivityName="xyz.aethersx2.android.MainActivity" android:theme="@style/AppTheme.EmulationActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="xyz.aethersx2.android.MainActivity"/>
+        
+        <!-- Actividad: Pantalla de emulación (donde se juega) -->
+        <activity 
+            android:alwaysRetainTaskState="true" 
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode" 
+            android:exported="true" 
+            android:immersive="true" 
+            android:label="NetherSX2" 
+            android:name="xyz.aethersx2.android.EmulationActivity" 
+            android:parentActivityName="xyz.aethersx2.android.MainActivity" 
+            android:theme="@style/AppTheme.EmulationActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY" 
+                android:value="xyz.aethersx2.android.MainActivity"/>
         </activity>
-        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:exported="true" android:label="NetherSX2" android:name="xyz.aethersx2.android.MainActivity" android:theme="@style/AppTheme.NoActionBar">
+        
+        <!-- Actividad Principal: Lista de juegos y menú principal -->
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" 
+            android:exported="true" 
+            android:label="NetherSX2" 
+            android:name="xyz.aethersx2.android.MainActivity" 
+            android:theme="@style/AppTheme.NoActionBar">
+            <!-- Intent filter: Define esta actividad como punto de entrada de la app -->
             <intent-filter>
+                <!-- Acción principal al abrir la aplicación -->
                 <action android:name="android.intent.action.MAIN"/>
+                <!-- Categoría que la hace aparecer en el launcher -->
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <provider android:authorities="xyz.aethersx2.android.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
-            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        
+        <!-- Proveedor: Inicialización de componentes de AndroidX -->
+        <provider 
+            android:authorities="xyz.aethersx2.android.androidx-startup" 
+            android:exported="false" 
+            android:name="androidx.startup.InitializationProvider">
+            <!-- Inicializador de emojis compatibles -->
+            <meta-data 
+                android:name="androidx.emoji2.text.EmojiCompatInitializer" 
+                android:value="androidx.startup"/>
+            <!-- Inicializador del ciclo de vida de procesos -->
+            <meta-data 
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer" 
+                android:value="androidx.startup"/>
         </provider>
-        <uses-library android:name="androidx.window.extensions" android:required="false"/>
-        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
-        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
-        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
-        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
-        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        
+        <!-- Bibliotecas opcionales para ventanas (pantallas plegables, multi-ventana) -->
+        <uses-library 
+            android:name="androidx.window.extensions" 
+            android:required="false"/>
+        <uses-library 
+            android:name="androidx.window.sidecar" 
+            android:required="false"/>
+        
+        <!-- Metadatos de la aplicación -->
+        <!-- Módulos fusionados en el APK -->
+        <meta-data 
+            android:name="com.android.dynamic.apk.fused.modules" 
+            android:value="base"/>
+        <!-- Origen de la aplicación (Play Store) -->
+        <meta-data 
+            android:name="com.android.stamp.source" 
+            android:value="https://play.google.com/store"/>
+        <!-- Tipo de APK independiente -->
+        <meta-data 
+            android:name="com.android.stamp.type" 
+            android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <!-- Configuración de splits del APK -->
+        <meta-data 
+            android:name="com.android.vending.splits" 
+            android:value="@xml/splits0"/>
     </application>
 </manifest>

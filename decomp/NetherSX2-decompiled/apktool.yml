@@ -1,30 +1,55 @@
+# Información del APK de NetherSX2 generada por ApkTool
 !!brut.androlib.apk.ApkInfo
+
+# Nombre del archivo APK original
 apkFileName: NetherSX2-v2.2n-4248.apk
+
+# Archivos que NO deben ser comprimidos en el APK (para mejor rendimiento)
 doNotCompress:
-- resources.arsc
-- png
-- assets/cheats_ni.zip
-- assets/cheats_ws.zip
-- assets/dexopt/baseline.prof
-- assets/dexopt/baseline.profm
-- wav
-- lib/arm64-v8a/libemucore.so
+- resources.arsc              # Tabla de recursos de Android
+- png                         # Imágenes PNG (ya están comprimidas)
+- assets/cheats_ni.zip        # Códigos de trucos (Nintendo?)
+- assets/cheats_ws.zip        # Códigos de trucos (widescreen?)
+- assets/dexopt/baseline.prof  # Perfil de optimización DEX
+- assets/dexopt/baseline.profm # Perfil de optimización DEX (metadata)
+- wav                         # Archivos de audio WAV
+- lib/arm64-v8a/libemucore.so # Biblioteca nativa principal del emulador
+
+# Indica si es un APK de framework del sistema (no lo es)
 isFrameworkApk: false
+
+# Información del paquete
 packageInfo:
-  forcedPackageId: '127'
-  renameManifestPackage: null
+  forcedPackageId: '127'           # ID forzado del paquete
+  renameManifestPackage: null      # No se renombra el paquete
+
+# Indica si los recursos están comprimidos (no lo están)
 resourcesAreCompressed: false
+
+# Información del SDK de Android
 sdkInfo:
-  minSdkVersion: '26'
-  targetSdkVersion: '32'
+  minSdkVersion: '26'      # SDK mínimo: Android 8.0 (Oreo)
+  targetSdkVersion: '32'   # SDK objetivo: Android 12L
+
+# Indica si es una biblioteca compartida (no lo es)
 sharedLibrary: false
+
+# Usa recursos dispersos (optimización de espacio)
 sparseResources: true
+
+# Archivos desconocidos encontrados (ninguno)
 unknownFiles: {}
+
+# Framework usado por la aplicación
 usesFramework:
   ids:
-  - 1
-  tag: null
+  - 1                      # Framework ID 1 (Android framework estándar)
+  tag: null                # Sin tag especial
+
+# Versión de ApkTool usada para descompilar
 version: 2.8.1
+
+# Información de versión de la aplicación
 versionInfo:
-  versionCode: '15269'
-  versionName: v2.2n-4248
+  versionCode: '15269'           # Código de versión interno
+  versionName: v2.2n-4248        # Nombre de versión visible (v2.2n basado en AetherSX2 4248)
