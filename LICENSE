@@ -1,28 +1,34 @@
-Este es software libre y sin restricciones liberado al dominio público.
+PS2Forge - Emulador de PlayStation 2 para Android
+Desarrollado por torrez9
+Copyright (C) 2026 torrez9. Todos los derechos reservados al dominio público.
 
+Este es software libre y sin restricciones liberado al dominio público.
 
 Cualquier persona es libre de copiar, modificar, publicar, usar, compilar, vender o
 distribuir este software, ya sea en forma de código fuente o como binario
 compilado, para cualquier propósito, comercial o no comercial, y por cualquier
 medio.
 
-
-En jurisdicciones que reconocen las leyes de derechos de autor, el autor o autores
-de este software dedican todo y cualquier interés de derechos de autor en el
+En jurisdicciones que reconocen las leyes de derechos de autor, Darwin Torrez,
+autor de este software, dedica todo y cualquier interés de derechos de autor en el
 software al dominio público. Hacemos esta dedicación en beneficio
 del público en general y en detrimento de nuestros herederos y
 sucesores. Pretendemos que esta dedicación sea un acto abierto de
 renuncia a perpetuidad de todos los derechos presentes y futuros sobre este
 software bajo las leyes de derechos de autor.
 
-
 EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO,
 EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A LAS GARANTÍAS DE
 COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.
-EN NINGÚN CASO LOS AUTORES SERÁN RESPONSABLES POR NINGÚN RECLAMO, DAÑOS U
-OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE OTRA MANERA,
-QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
-OTRAS OPERACIONES CON EL SOFTWARE.
+EN NINGÚN CASO DARWIN TORREZ O LOS COLABORADORES SERÁN RESPONSABLES POR
+NINGÚN RECLAMO, DAÑOS U OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE
+CONTRATO, AGRAVIO O DE OTRA MANERA, QUE SURJA DE, FUERA DE O EN CONEXIÓN
+CON EL SOFTWARE O EL USO U OTRAS OPERACIONES CON EL SOFTWARE.
 
+----------------------------------------------------------------------
+PS2Forge está basado en los siguientes proyectos de código abierto:
+  - PCSX2:      https://github.com/PCSX2/pcsx2
+  - NetherSX2:  https://github.com/Trixarian/NetherSX2-patch
+----------------------------------------------------------------------
 
-Para más información, por favor consulte <https://unlicense.org>
+Para más información sobre la licencia pública, consulte <https://unlicense.org>
