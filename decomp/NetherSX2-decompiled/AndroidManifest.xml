@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!-- Manifiesto principal de la aplicación NetherSX2 -->
+<!-- Manifiesto principal de la aplicación PS2Forge -->
+<!-- Desarrollado por Darwin Torrez - 2026 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
     android:compileSdkVersion="23" 
     android:compileSdkVersionCodename="6.0-2438415" 
@@ -7,45 +8,61 @@
     platformBuildVersionCode="23" 
     platformBuildVersionName="6.0-2438415">
     
-    <!-- Permisos requeridos por la aplicación -->
-    <!-- Permiso para vibración del dispositivo (feedback háptico) -->
+    <!-- ============================================ -->
+    <!--         PERMISOS DE LA APLICACIÓN           -->
+    <!-- ============================================ -->
+
+    <!-- Vibración del dispositivo (feedback háptico en controles) -->
     <uses-permission android:name="android.permission.VIBRATE"/>
-    <!-- Permiso para acceso a Internet (RetroAchievements, actualizaciones) -->
+    <!-- Acceso a Internet (RetroAchievements, actualizaciones de GameDB) -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Leer almacenamiento externo (cargar ROMs y BIOS) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- Escribir en almacenamiento externo (guardar estados y memory cards) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
     
-    <!-- Configuración general de la aplicación -->
+    <!-- ============================================ -->
+    <!--        CONFIGURACIÓN DE LA APLICACIÓN       -->
+    <!-- ============================================ -->
     <application 
         android:allowBackup="true" 
         android:appComponentFactory="androidx.core.app.CoreComponentFactory" 
         android:hasFragileUserData="true" 
-        android:icon="@mipmap/ic_launcher" 
-        android:label="NetherSX2" 
-        android:roundIcon="@mipmap/ic_launcher_round" 
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="PS2Forge"
         android:supportsRtl="true" 
         android:theme="@style/AppTheme" 
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true">
         
-        <!-- Actividad: Administrador de estados guardados -->
+        <!-- ============================================ -->
+        <!--              ACTIVIDADES                    -->
+        <!-- ============================================ -->
+
+        <!-- Administrador de estados guardados (Save States) -->
         <activity 
             android:exported="false" 
             android:label="@string/save_state_manager_title" 
             android:name="xyz.aethersx2.android.SaveStateManagerActivity" 
             android:theme="@style/AppTheme"/>
         
-        <!-- Actividad: Crear tarjeta de memoria (Memory Card) -->
+        <!-- Crear tarjeta de memoria (Memory Card) -->
         <activity 
             android:exported="false" 
             android:label="@string/memory_card_create_title" 
             android:name="xyz.aethersx2.android.CreateMemoryCardActivity" 
             android:theme="@style/AppTheme"/>
         
-        <!-- Actividad: Editor de archivos -->
+        <!-- Editor de archivos de configuración -->
         <activity 
             android:exported="false" 
             android:name="xyz.aethersx2.android.FileEditorActivity" 
             android:theme="@style/AppTheme"/>
         
-        <!-- Actividad: Asistente de configuración inicial -->
+        <!-- Asistente de configuración inicial (primer inicio) -->
         <activity 
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" 
             android:exported="false" 
@@ -53,19 +70,18 @@
             android:name="xyz.aethersx2.android.SetupWizardActivity" 
             android:theme="@style/AppTheme.NoActionBar"/>
         
-        <!-- Actividad: Configuración general de la aplicación -->
+        <!-- Configuración general de PS2Forge -->
         <activity 
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" 
             android:label="@string/title_activity_settings" 
             android:name="xyz.aethersx2.android.SettingsActivity" 
             android:theme="@style/AppTheme">
-            <!-- Define la actividad padre para la navegación -->
             <meta-data 
                 android:name="android.support.PARENT_ACTIVITY" 
                 android:value="xyz.aethersx2.android.MainActivity"/>
         </activity>
         
-        <!-- Actividad: Configuración de controles -->
+        <!-- Configuración de controles y mandos -->
         <activity 
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" 
             android:label="@string/title_activity_settings" 
@@ -75,7 +91,7 @@
                 android:value="xyz.aethersx2.android.MainActivity"/>
         </activity>
         
-        <!-- Actividad: Propiedades específicas por juego -->
+        <!-- Propiedades individuales por juego -->
         <activity 
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" 
             android:label="@string/title_activity_game_properties" 
@@ -85,13 +101,15 @@
                 android:value="xyz.aethersx2.android.MainActivity"/>
         </activity>
         
-        <!-- Actividad: Pantalla de emulación (donde se juega) -->
+        <!-- Pantalla de emulación principal (donde se ejecutan los juegos) -->
+        <!-- immersive=true: oculta barra de navegación durante el juego -->
+        <!-- alwaysRetainTaskState=true: mantiene estado al cambiar de app -->
         <activity 
             android:alwaysRetainTaskState="true" 
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode" 
             android:exported="true" 
             android:immersive="true" 
-            android:label="NetherSX2" 
+            android:label="PS2Forge" 
             android:name="xyz.aethersx2.android.EmulationActivity" 
             android:parentActivityName="xyz.aethersx2.android.MainActivity" 
             android:theme="@style/AppTheme.EmulationActivity">
@@ -100,38 +118,44 @@
                 android:value="xyz.aethersx2.android.MainActivity"/>
         </activity>
         
-        <!-- Actividad Principal: Lista de juegos y menú principal -->
+        <!-- Actividad Principal: Lista de juegos (punto de entrada de la app) -->
         <activity 
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" 
             android:exported="true" 
-            android:label="NetherSX2" 
+            android:label="PS2Forge" 
             android:name="xyz.aethersx2.android.MainActivity" 
             android:theme="@style/AppTheme.NoActionBar">
-            <!-- Intent filter: Define esta actividad como punto de entrada de la app -->
+            <!-- Define esta actividad como punto de entrada al abrir la app -->
             <intent-filter>
-                <!-- Acción principal al abrir la aplicación -->
                 <action android:name="android.intent.action.MAIN"/>
-                <!-- Categoría que la hace aparecer en el launcher -->
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         
-        <!-- Proveedor: Inicialización de componentes de AndroidX -->
+        <!-- ============================================ -->
+        <!--              PROVEEDORES                    -->
+        <!-- ============================================ -->
+
+        <!-- Inicialización de componentes de AndroidX al arrancar -->
         <provider 
             android:authorities="xyz.aethersx2.android.androidx-startup" 
             android:exported="false" 
             android:name="androidx.startup.InitializationProvider">
-            <!-- Inicializador de emojis compatibles -->
+            <!-- Compatibilidad de emojis en toda la app -->
             <meta-data 
                 android:name="androidx.emoji2.text.EmojiCompatInitializer" 
                 android:value="androidx.startup"/>
-            <!-- Inicializador del ciclo de vida de procesos -->
+            <!-- Gestión del ciclo de vida de procesos en segundo plano -->
             <meta-data 
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer" 
                 android:value="androidx.startup"/>
         </provider>
         
-        <!-- Bibliotecas opcionales para ventanas (pantallas plegables, multi-ventana) -->
+        <!-- ============================================ -->
+        <!--         BIBLIOTECAS Y METADATOS             -->
+        <!-- ============================================ -->
+
+        <!-- Soporte para pantallas plegables y multi-ventana (opcional) -->
         <uses-library 
             android:name="androidx.window.extensions" 
             android:required="false"/>
@@ -139,20 +163,19 @@
             android:name="androidx.window.sidecar" 
             android:required="false"/>
         
-        <!-- Metadatos de la aplicación -->
-        <!-- Módulos fusionados en el APK -->
+        <!-- Módulos incluidos en este APK -->
         <meta-data 
             android:name="com.android.dynamic.apk.fused.modules" 
             android:value="base"/>
-        <!-- Origen de la aplicación (Play Store) -->
+        <!-- Origen del APK -->
         <meta-data 
             android:name="com.android.stamp.source" 
             android:value="https://play.google.com/store"/>
-        <!-- Tipo de APK independiente -->
+        <!-- Tipo de distribución: APK independiente -->
         <meta-data 
             android:name="com.android.stamp.type" 
             android:value="STAMP_TYPE_STANDALONE_APK"/>
-        <!-- Configuración de splits del APK -->
+        <!-- Configuración de recursos divididos (splits) -->
         <meta-data 
             android:name="com.android.vending.splits" 
             android:value="@xml/splits0"/>

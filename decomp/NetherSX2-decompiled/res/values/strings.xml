@@ -30,7 +30,7 @@
     <string name="achievement_points_format_string">%d points</string>
     <string name="achievement_settings_login_cancel_button">Cancel</string>
     <string name="achievement_settings_login_failed">Login failed. Please check your username and password, and try again.</string>
-    <string name="achievement_settings_login_help">Please enter user name and password for retroachievements.org below. Your password will not be saved in NetherSX2, an access token will be generated and used instead.</string>
+    <string name="achievement_settings_login_help">Please enter user name and password for retroachievements.org below. Your password will not be saved in PS2 FORGE, an access token will be generated and used instead.</string>
     <string name="achievement_settings_login_login_button">Login</string>
     <string name="achievement_settings_login_password_hint">Password</string>
     <string name="achievement_settings_login_title">RetroAchievements Login</string>
@@ -487,7 +487,7 @@ This may improve performance, but WILL BREAK some games."</string>
     <string name="settings_achievements_challenge_mode">Enable Hardcore Mode</string>
     <string name="settings_achievements_confirm_logout_message">After logging out, no more achievements will be unlocked until you log back in again. Achievements already unlocked will not be lost.</string>
     <string name="settings_achievements_confirm_logout_title">Confirm Logout</string>
-    <string name="settings_achievements_disclaimer">NetherSX2 uses RetroAchievements (retroachievements.org) as an achievement database and for tracking progress.</string>
+    <string name="settings_achievements_disclaimer">PS2 FORGE uses RetroAchievements (retroachievements.org) as an achievement database and for tracking progress.</string>
     <string name="settings_achievements_enable">Enable RetroAchievements</string>
     <string name="settings_achievements_global_settings">Global Settings</string>
     <string name="settings_achievements_leaderboards">Enable Leaderboards</string>
@@ -664,7 +664,7 @@ This may improve performance, but WILL BREAK some games."</string>
     <string name="settings_spin_cpu_for_readbacks">Spin CPU For Readbacks</string>
     <string name="settings_spin_gpu_for_readbacks">Spin GPU For Readbacks</string>
     <string name="settings_summary_achievements_challenge_mode">Challenge mode for achievements, including leaderboard tracking. Disables save state, cheats, and slowdown functions.</string>
-    <string name="settings_summary_achievements_enable">When enabled and logged in, NetherSX2 will scan for achievements on startup.</string>
+    <string name="settings_summary_achievements_enable">When enabled and logged in, PS2 FORGE will scan for achievements on startup.</string>
     <string name="settings_summary_achievements_leaderboards">Enables submission of leaderboards in hardcore mode for supported games. If disabled, you can still view leaderboards, but no scores will be uploaded.</string>
     <string name="settings_summary_achievements_login">Logs in to your account to record achievements.</string>
     <string name="settings_summary_achievements_logout">Logs out of your account. No new achievements will be recorded.</string>
@@ -672,7 +672,7 @@ This may improve performance, but WILL BREAK some games."</string>
     <string name="settings_summary_achievements_register">Opens a link to create a new account.</string>
     <string name="settings_summary_achievements_rich_presence">Rich presence information will be collected and sent to the server where supported.</string>
     <string name="settings_summary_achievements_sound_effects">Plays sound effects for events such as achievement unlocks and leaderboard submissions.</string>
-    <string name="settings_summary_achievements_test_mode">When enabled, NetherSX2 will assume all achievements are locked and not send any unlock notifications to the server.</string>
+    <string name="settings_summary_achievements_test_mode">When enabled, PS2 FORGE will assume all achievements are locked and not send any unlock notifications to the server.</string>
     <string name="settings_summary_achievements_unofficial_test_mode">List and activate unofficial sets. Note that these achievements are not tracked, so they unlock every time.</string>
     <string name="settings_summary_achievements_view_profile">Opens a link to your profile.</string>
     <string name="settings_summary_anti_blue">Attempts to reverse blur/anti-flicker present in many games.</string>
@@ -796,7 +796,7 @@ This may improve performance, but WILL BREAK some games."</string>
     <string name="setup_wizard_faq_message">Please read the following instructions before continuing. You can access this FAQ again from the navigation menu in the game list.</string>
     <string name="setup_wizard_faq_title">FAQ</string>
     <string name="setup_wizard_finish">Finish</string>
-    <string name="setup_wizard_game_directories_message">NetherSX2 will automatically detect games in the locations you specify here. You should add at least one directory to scan. Please do not add the top of your storage volume, otherwise scanning will take a very long time.</string>
+    <string name="setup_wizard_game_directories_message">PS2 FORGE will automatically detect games in the locations you specify here. You should add at least one directory to scan. Please do not add the top of your storage volume, otherwise scanning will take a very long time.</string>
     <string name="setup_wizard_game_directories_title">Game Directories</string>
     <string name="setup_wizard_next">Next</string>
     <string name="setup_wizard_safe_defaults">Fast/Unsafe Defaults</string>
@@ -807,7 +807,7 @@ This may improve performance, but WILL BREAK some games."</string>
     <string name="setup_wizard_unsafe_defaults_summary">Use if you have a mid to high end device.</string>
     <string name="setup_wizard_welcome_first_paragraph">Just a few setup steps are necessary before you can play games.</string>
     <string name="setup_wizard_welcome_second_paragraph">Tap Next to get started.</string>
-    <string name="setup_wizard_welcome_title">Welcome to NetherSX2!</string>
+    <string name="setup_wizard_welcome_title">Welcome to PS2 FORGE!</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="title_activity_game_properties">Game Properties</string>

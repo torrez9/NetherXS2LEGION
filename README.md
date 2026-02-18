@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="312" height="312" src="/.github/assets/PCSX2_logo.png">
+  <img width="312" height="312" src="/.github/assets/1024.png">
 </p>
 
 # PS2Forge
