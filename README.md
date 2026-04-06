@@ -1,74 +1,170 @@
-<p align="center">
-  <img width="312" height="312" src="/.github/assets/1024.png">
-</p>
+<div align="center">
 
-# PS2Forge
-PS2Forge es un emulador de PlayStation 2 para Android, basado en el increíble trabajo de la comunidad de PCSX2, AetherSX2 y NetherSX2, llevado al siguiente nivel por torrez9.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,100:1a1a2e&height=180&section=header&text=PS2Forge&fontSize=70&fontColor=ffffff&fontAlignY=42&desc=PlayStation%202%20Emulator%20for%20Android&descAlignY=62&descSize=16" width="100%"/>
 
-Los objetivos de PS2Forge son:
-* Eliminar la carga innecesaria de servicios de anuncios
-* Arreglar las Notificaciones de RetroAchievements
-* Exponer más configuraciones globales de la aplicación al usuario
-* Actualizar la GameDB, Soporte de Controles, y los Parches de Pantalla Panorámica y Sin Entrelazado
-* Añadir correcciones específicas adicionales a la GameDB
-* Re-firmar el APK para eliminar la advertencia de Play Protect
-* Interfaz modernizada y optimizada para mejor experiencia de usuario
+<br/>
 
+<img width="160" height="160" src="/.github/assets/1024.png" style="border-radius:24px"/>
 
-## Instalando PS2Forge
-Una vez que hayas obtenido una copia del [PS2Forge APK](https://github.com/torrez9/NetherXS2LEGION/releases), es momento de instalarlo en tu dispositivo.
+<br/><br/>
 
-Si estabas usando una copia de NetherSX2 o AetherSX2:
-1. (Opcional) Haz un respaldo de tus archivos en caso de que algo salga mal. El método más fácil es usar la función integrada de Transferir Datos usando su característica de Exportar para mover tus archivos a una carpeta externa. Esto respaldará tus archivos de bios, tarjetas de memoria, estados guardados, configuraciones de juegos, carátulas y paquetes de texturas
-2. Después de respaldar tus archivos, desinstala cualquier versión anterior de AetherSX2 o NetherSX2. Asegúrate de NO mantener ningún archivo si se te solicita
-3. Navega a donde pusiste el APK de PS2Forge con tu Administrador de Archivos y tócalo para instalarlo
-4. Una vez instalado, ejecuta la aplicación y configúrala normalmente. En la pantalla de Lista de Juegos, accede a Transferir Datos e Importa los archivos que exportaste anteriormente
-5. Dedica algo de tiempo a rehacer la Configuración Global y estarás listo para comenzar
+<img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Based_on-PCSX2-003087?style=for-the-badge&logo=playstation&logoColor=white"/>
+&nbsp;
+<img src="https://img.shields.io/badge/License-GPL--3.0-yellow?style=for-the-badge"/>
+&nbsp;
+<a href="https://github.com/torrez9/NetherXS2LEGION/releases">
+  <img src="https://img.shields.io/github/v/release/torrez9/NetherXS2LEGION?style=for-the-badge&label=Latest+Release&color=blue"/>
+</a>
 
-Si es tu primera instalación:
-1. Descarga el APK desde la sección de [Releases](https://github.com/torrez9/NetherXS2LEGION/releases)
-2. Habilita la instalación desde fuentes desconocidas en tu dispositivo Android
-3. Toca el APK para instalarlo
+<br/><br/>
+
+**PS2Forge** es un emulador de PlayStation 2 para Android, basado en el trabajo de la comunidad de **PCSX2**, **AetherSX2** y **NetherSX2**, llevado al siguiente nivel.
+
+<a href="https://github.com/torrez9/NetherXS2LEGION/releases">
+  <img src="https://img.shields.io/badge/⬇️_Descargar_APK-Releases-0a84ff?style=for-the-badge"/>
+</a>
+
+</div>
+
+---
+
+## ✨ ¿Qué mejora PS2Forge?
+
+| Mejora | Descripción |
+|---|---|
+| 🚫 **Sin anuncios** | Elimina toda carga innecesaria de servicios de publicidad |
+| 🏆 **RetroAchievements** | Notificaciones completamente arregladas y funcionales |
+| ⚙️ **Más configuraciones** | Expone configuraciones globales avanzadas al usuario |
+| 🗃️ **GameDB actualizada** | Base de datos de juegos, parches widescreen y deinterlace al día |
+| 🎮 **Mejor soporte de controles** | Configuración automática mejorada para mandos |
+| 🔏 **APK re-firmado** | Sin advertencias de Play Protect al instalar |
+| 🎨 **UI modernizada** | Interfaz optimizada para mejor experiencia de usuario |
+
+---
+
+## 📲 Instalación
+
+### Desde AetherSX2 / NetherSX2
+
+> ⚠️ Se recomienda hacer respaldo antes de continuar
+
+1. **Respalda tus archivos** — usa la función integrada **Transferir Datos → Exportar** para guardar:
+   - BIOS, Memory Cards, Save States
+   - Configuraciones de juegos, carátulas y texture packs
+2. **Desinstala** la versión anterior (AetherSX2 o NetherSX2)
+   > No mantengas ningún archivo si el sistema lo solicita
+3. **Instala PS2Forge** — descarga el APK desde [Releases](https://github.com/torrez9/NetherXS2LEGION/releases) y tócalo para instalar
+4. **Importa tus datos** — en la pantalla de Lista de Juegos → **Transferir Datos → Importar**
+5. **Reconfigura** los ajustes globales y ya estás listo ✅
+
+---
+
+### Primera instalación
+
+1. Descarga el APK desde [**Releases**](https://github.com/torrez9/NetherXS2LEGION/releases)
+2. En Android: **Ajustes → Seguridad → Fuentes desconocidas** → Activar
+3. Toca el APK para instalar
 4. Ejecuta PS2Forge y sigue el asistente de configuración inicial
 
+---
 
-## Preguntas Frecuentes
-### ¿Por qué usar PS2Forge en lugar de AetherSX2 o NetherSX2?
-Usa PS2Forge si quieres:
-* RetroAchievements
-* Archivos de configuración siempre actualizados
-* Correcciones de errores específicas para juegos
-* Mejor soporte de controles para configuración automática
-* Interfaz mejorada y modernizada
-* Soporte activo y actualizaciones frecuentes
+## ❓ Preguntas Frecuentes
 
+<details>
+<summary><b>🤔 ¿Por qué usar PS2Forge en lugar de AetherSX2 o NetherSX2?</b></summary>
+<br/>
 
-### ¿Qué variante debo usar entre Classic (3668) y Patched (4248)?
-Esto depende de los juegos que vayas a jugar. Generalmente Classic será más eficiente - algunos juegos solo funcionarán bien en él - pero le faltarán algunas correcciones gráficas solo presentes en 4248. Se recomienda usar 3668 con dispositivos Mali o menos potentes. Para dispositivos más potentes o con Adreno, se recomienda la variante 4248.
+Usa **PS2Forge** si quieres:
+- ✅ RetroAchievements funcionando correctamente
+- ✅ Archivos de configuración siempre actualizados
+- ✅ Correcciones de errores específicas por juego
+- ✅ Mejor soporte de controles con configuración automática
+- ✅ Interfaz mejorada y modernizada
+- ✅ Soporte activo con actualizaciones frecuentes
 
+</details>
 
-### ¿Cuáles son las mejores configuraciones para el rendimiento?
-Las configuraciones predeterminadas de Óptimo/Seguro son las más compatibles y eficientes para la mayoría de juegos. Puedes optimizarlas usando el renderizador de GPU Vulkan y configurando el Modo de Descarga de Hardware en Deshabilitar Lecturas. Con 3668, habilita Presentación con Hilos cuando uses Vulkan.
+<details>
+<summary><b>🎮 ¿Qué variante uso — Classic (3668) o Patched (4248)?</b></summary>
+<br/>
 
+| Variante | Ideal para | Ventajas |
+|---|---|---|
+| **Classic (3668)** | Dispositivos Mali o menos potentes | Mayor eficiencia, mejor compatibilidad general |
+| **Patched (4248)** | Dispositivos Adreno o más potentes | Más correcciones gráficas avanzadas |
 
-## Descargas
-### Estable
-* Próximamente en [Releases](https://github.com/torrez9/NetherXS2LEGION/releases)
+> Cuando dudes, empieza con **Classic (3668)** — es el más compatible.
 
-### Compilación de Desarrollo
-* Próximamente en [Releases](https://github.com/torrez9/NetherXS2LEGION/releases)
+</details>
 
+<details>
+<summary><b>⚡ ¿Cuáles son las mejores configuraciones para rendimiento?</b></summary>
+<br/>
 
-## Créditos
-### Desarrollador Principal
-* **Darwin Torrez** - Desarrollo y mantenimiento de PS2Forge
-  * GitHub: <https://github.com/torrez9>
+Las configuraciones **Óptimo/Seguro** son las más compatibles para la mayoría de juegos. Para maximizar rendimiento:
 
-### Proyectos Base
-* PCSX2 (motor base del emulador): <https://github.com/PCSX2/pcsx2>
-* AetherSX2 (base de la versión Android)
-* NetherSX2 (parches y mejoras base): <https://github.com/Trixarian/NetherSX2-patch>
+- 🎨 **Renderizador**: GPU Vulkan
+- 📥 **Modo de Descarga de Hardware**: Deshabilitar Lecturas
+- 🧵 **Con Classic (3668) + Vulkan**: Habilita **Presentación con Hilos**
 
-### Recursos y Herramientas
-* SDL_GameControllerDB: <https://github.com/mdqinc/SDL_GameControllerDB>
-* Android Keystore: <https://github.com/jorfao/pkStore>
+</details>
+
+---
+
+## 📦 Descargas
+
+<div align="center">
+
+| Canal | Estado | Link |
+|---|---|---|
+| 🟢 **Estable** | Disponible | [**→ Ver Releases**](https://github.com/torrez9/NetherXS2LEGION/releases) |
+| 🔵 **Dev Build** | Próximamente | [**→ Ver Releases**](https://github.com/torrez9/NetherXS2LEGION/releases) |
+
+</div>
+
+---
+
+## 👥 Créditos
+
+### 🧑‍💻 Desarrollador Principal
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/torrez9">
+        <img src="https://github.com/torrez9.png" width="80" style="border-radius:50%"/><br/>
+        <b>Darwin Torrez</b><br/>
+        <sub>Desarrollo y mantenimiento de PS2Forge</sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+### 🏗️ Proyectos Base
+
+| Proyecto | Contribución | Link |
+|---|---|---|
+| **PCSX2** | Motor base del emulador | [github.com/PCSX2/pcsx2](https://github.com/PCSX2/pcsx2) |
+| **AetherSX2** | Base de la versión Android | — |
+| **NetherSX2** | Parches y mejoras base | [github.com/Trixarian/NetherSX2-patch](https://github.com/Trixarian/NetherSX2-patch) |
+
+### 🛠️ Recursos y Herramientas
+
+| Recurso | Link |
+|---|---|
+| SDL_GameControllerDB | [github.com/mdqinc/SDL_GameControllerDB](https://github.com/mdqinc/SDL_GameControllerDB) |
+| Android Keystore | [github.com/jorfao/pkStore](https://github.com/jorfao/pkStore) |
+
+---
+
+<div align="center">
+
+<sub>PS2Forge es un proyecto sin fines de lucro basado en software de código abierto.<br/>PlayStation 2 es marca registrada de Sony Interactive Entertainment.</sub>
+
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:0a0a0a&height=100&section=footer" width="100%"/>
+
+</div>
